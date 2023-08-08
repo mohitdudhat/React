@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  font-family: Arial, sans-serif;
+  color: #ddd;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #333;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(14px + 2vmin);
+  color: #fff;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin: 0 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button.active {
+  background-color: #555;
+}
+
+.buttons button:hover {
+  background-color: #666;
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+.records-table {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 2px solid #555;
+  background-color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  table-layout: fixed;
+}
+
+.records-table th,
+.records-table td {
+  padding: 14px;
+  border: 2px solid #555;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.records-table th {
+  background-color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.records-table th:hover {
+  background-color: #555;
+}
+
+.records-table img {
+  max-width: 120px;
+  max-height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.records-table img:hover {
+  transform: scale(1.1);
+}
+
+.records-table td:first-child {
+  text-align: center;
+}
+
+.records-table th:last-child,
+.records-table td:last-child {
+  text-align: right;
+}
+
+.records-table th:nth-child(2),
+.records-table td:nth-child(2) {
+  text-align: left;
+}
+
+/* Floating Labels */
+.form-input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+  transition: transform 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-80%) scale(0.8);
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
