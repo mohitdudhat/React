@@ -1,0 +1,173 @@
+body {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfdfec !important;
+  font-family: system-ui, calibri, serif;
+  background-repeat: repeat-x;
+  background-image: url("https://i.stack.imgur.com/b7z29.png");
+  animation: movement 10s linear infinite;
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 560px 0px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.b-image {
+  display: none;
+}
+header {
+  background-color: rgb(34, 28, 67);
+  color: white;
+  font-size: 18px;
+  font-family: "Arial", sans-serif; /* Updated font-family */
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.btn1 {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(35, 19, 73);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif; /* Updated font-family */
+}
+table .delete {
+  background-color: rgb(221, 157, 72);
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-family: "Arial", sans-serif; /* Updated font-family */
+}
+table .edit {
+  background-color: rgb(221, 72, 107);
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-family: "Arial", sans-serif; /* Updated font-family */
+}
+table .delete:hover {
+  border: 3px solid rgb(221, 157, 72);
+  background-color: white;
+  color: black;
+}
+table .edit:hover {
+  border: 3px solid rgb(221, 72, 107);
+  background-color: white;
+  color: black;
+}
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Arial", sans-serif; /* Updated font-family */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+header {
+  background-color: rgb(34, 28, 67);
+  color: white;
+  font-size: 18px;
+  font-family: poppins;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+  font-family: var(--bs-body-font-family);
+}
+
+.btn1 {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(35, 19, 73);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+table .delete {
+  background-color: rgb(221, 157, 72);
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+}
+table .edit {
+  background-color: rgb(221, 72, 107);
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+}
+table .delete:hover {
+  border: 3px solid rgb(221, 157, 72);
+  background-color: white;
+  color: black;
+}
+table .edit:hover {
+  border: 3px solid rgb(221, 72, 107);
+  background-color: white;
+  color: black;
+}
+.btn {
+  background-color: rgb(35, 19, 73);
+}
+.form-label {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: poppins;
+  font-family: var(--bs-body-font-family);
+}
+.table {
+  border-radius: 25px !important;
+}
+.w-10 {
+  width: 100px;
+  height: 40px;
+}
+th,
+td {
+  text-align: center;
+  line-height: 2;
+}
