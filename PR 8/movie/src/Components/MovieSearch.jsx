@@ -39,11 +39,11 @@ const MovieSearch = () => {
     const fetchGenres = async () => {
       try {
         const response = await axios.get(genresUrl, {
-          headers: {
-            Authorization: `Bearer ${bearerToken}`,
+          params: {
+            api_key: apiKey,
           },
         });
-
+        console.log(response.data.genres);
         setGenres(response.data.genres);
       } catch (error) {
         console.error("Error fetching genres:", error);
